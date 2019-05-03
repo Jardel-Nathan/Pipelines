@@ -24,6 +24,7 @@ class Welcome extends CI_Controller {
 		$this->db->select('*');
 		$this->db->from('municipios');
 		$query = $this->db->get();
+		echo '<pre>';
 		var_dump($query->result()); 
 		exit;
 		$this->load->view('welcome_message');
