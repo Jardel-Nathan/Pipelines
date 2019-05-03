@@ -22,7 +22,7 @@ class Welcome extends CI_Controller {
 	{
 
 		$this->db->select('*');
-		$this->db->from('tabela');
+		$this->db->from('municipios');
 		$query = $this->db->get();
 		var_dump($query->result()); 
 		exit;
