@@ -20,6 +20,12 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+
+		$this->db->select('*');
+		$this->db->from('tabela');
+		$query = $this->db->get();
+		var_dump($query->result()); 
+		exit;
 		$this->load->view('welcome_message');
 	}
 }
